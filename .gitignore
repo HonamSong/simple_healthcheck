@@ -1,0 +1,16 @@
+# Local environment configuration (contains GCP project IDs, registry paths, etc.)
+.env
+
+# Local development / session context files (not for public repo)
+CLAUDE.md
+history.md
+
+# Build artifacts
+/simple_healthcheck
+/health-server
+*.exe
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
