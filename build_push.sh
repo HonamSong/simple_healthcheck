@@ -71,6 +71,7 @@ docker buildx build \
 # ========= 결과 확인 =========
 log "Verifying pushed image in Artifact Registry..."
 gcloud artifacts docker images describe "${IMAGE_URI}" \
+  --project="${PROJECT_ID}" \
   --format="value(image_summary.digest)" \
   || warn "Could not verify image (check permissions)."
 
